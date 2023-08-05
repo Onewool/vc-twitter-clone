@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.sidebar {
+    width: 28%;
+    height: 100vh;
+    border-right: 1px solid #38444d;
+    position: fixed;
+    background-color: rgba(0,0,0,1.00);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 43px;
+    height: 43px;
+    padding: 7px;
+    margin-right: 10px;
+    fill: rgb(231, 233, 234);   
+}
+.logo:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    margin-left: auto;
+    color: #E7E9EA
+}
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 10px 12px; 
+    cursor: pointer;
+}
+.sidebar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+.sidebar-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    fill: rgb(231, 233, 234);
+}
+.sidebar-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sidebar-button {
+    padding: 10px 70px;
+    margin-top: 12px;
+    height: 50px; 
+    width: fit-content;
+    background-color: rgb(29, 155, 240);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer
+}
+.sidebar-button:hover {
+    background-color: rgb(26, 140, 216);
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-user {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    color: #E7E9EA;
+}
+.user-avatar {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+.user-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+.user-username {
+    font-size: 14px;
+    color: #8899a6;
+} 
+.sidebar-options {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.options-icon {
+    width: 20px;
+    height: 20px;
+    fill: rgb(231, 233, 234);
+}
+.sidebar-user:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: fit-content;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
