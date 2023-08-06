@@ -8,7 +8,7 @@
 .sidebar {
     width: 28%;
     height: 100vh;
-    border-right: 1px solid #38444d;
+    border-right: 2px solid #38444d;
     position: fixed;
     background-color: rgba(0,0,0,1.00);
 }
@@ -121,3 +121,4 @@
     border-radius: 50px;
     transition: background-color 0.3s ease;
 }
+
