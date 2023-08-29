@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <title>Home/Twitter</title>
 </head>
@@ -128,5 +129,633 @@
       </div>
      </div>
     </div> 
+
+
+    <div class="main-container">
+        <div class="content-wrapper">
+        <div class="middle-bar">
+        <div class="title-container">
+            <h1>Home</h1>
+            <div class="star">
+                <svg class="star-icon" viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-z80fyv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-19wmn03">
+                    <g>
+                        <path d="M22.772 10.506l-5.618-2.192-2.16-6.5c-.102-.307-.39-.514-.712-.514s-.61.207-.712.513l-2.16 6.5-5.62 2.192c-.287.112-.477.39-.477.7s.19.585.478.698l5.62 2.192 2.16 6.5c.102.306.39.513.712.513s.61-.207.712-.513l2.16-6.5 5.62-2.192c.287-.112.477-.39.477-.7s-.19-.585-.478-.697zm-6.49 2.32c-.208.08-.37.25-.44.46l-1.56 4.695-1.56-4.693c-.07-.21-.23-.38-.438-.462l-4.155-1.62 4.154-1.622c.208-.08.37-.25.44-.462l1.56-4.693 1.56 4.694c.07.212.23.382.438.463l4.155 1.62-4.155 1.622zM6.663 3.812h-1.88V2.05c0-.414-.337-.75-.75-.75s-.75.336-.75.75v1.762H1.5c-.414 0-.75.336-.75.75s.336.75.75.75h1.782v1.762c0 .414.336.75.75.75s.75-.336.75-.75V5.312h1.88c.415 0 .75-.336.75-.75s-.335-.75-.75-.75zm2.535 15.622h-1.1v-1.016c0-.414-.335-.75-.75-.75s-.75.336-.75.75v1.016H5.57c-.414 0-.75.336-.75.75s.336.75.75.75H6.6v1.016c0 .414.335.75.75.75s.75-.336.75-.75v-1.016h1.098c.414 0 .75-.336.75-.75s-.336-.75-.75-.75z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div class="tweet-creation">
+            <div class="tweet-creation-input">
+            <img src="./assets/Herschelle.jpg" alt="">
+            <input type="text"placeholder="What's happening?">
+            </div>
+        <div class="tweet-action">
+            <div class="tweet-icons">
+                <div class="tweet-option">
+                    <svg class="tweet-icon" viewBox="0 0 24 24">
+                        <g>
+                            <path
+                                d="M19.75 2H4.25C3.01 2 2 3.01 2 4.25v15.5C2 20.99 3.01 22 4.25 22h15.5c1.24 0 2.25-1.01 2.25-2.25V4.25C22 3.01 20.99 2 19.75 2zM4.25 3.5h15.5c.413 0 .75.337.75.75v9.676l-3.858-3.858c-.14-.14-.33-.22-.53-.22h-.003c-.2 0-.393.08-.532.224l-4.317 4.384-1.813-1.806c-.14-.14-.33-.22-.53-.22-.193-.03-.395.08-.535.227L3.5 17.642V4.25c0-.413.337-.75.75-.75zm-.744 16.28l5.418-5.534 6.282 6.254H4.25c-.402 0-.727-.322-.744-.72zm16.244.72h-2.42l-5.007-4.987 3.792-3.85 4.385 4.384v3.703c0 .413-.337.75-.75.75z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="tweet-option">
+                    <svg class="tweet-icon" viewBox="0 0 24 24">
+                        <g>
+                            <path
+                                d="M19 10.5V8.8h-4.4v6.4h1.7v-2h2v-1.7h-2v-1H19zm-7.3-1.7h1.7v6.4h-1.7V8.8zm-3.6 1.6c.4 0 .9.2 1.2.5l1.2-1C9.9 9.2 9 8.8 8.1 8.8c-1.8 0-3.2 1.4-3.2 3.2s1.4 3.2 3.2 3.2c1 0 1.8-.4 2.4-1.1v-2.5H7.7v1.2h1.2v.6c-.2.1-.5.2-.8.2-.9 0-1.6-.7-1.6-1.6 0-.8.7-1.6 1.6-1.6z">
+                            </path>
+                            <path
+                                d="M20.5 2.02h-17c-1.24 0-2.25 1.007-2.25 2.247v15.507c0 1.238 1.01 2.246 2.25 2.246h17c1.24 0 2.25-1.008 2.25-2.246V4.267c0-1.24-1.01-2.247-2.25-2.247zm.75 17.754c0 .41-.336.746-.75.746h-17c-.414 0-.75-.336-.75-.746V4.267c0-.412.336-.747.75-.747h17c.414 0 .75.335.75.747v15.507z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="tweet-option">
+                    <svg class="tweet-icon" viewBox="0 0 24 24">
+                        <g>
+                            <path
+                                d="M20.222 9.16h-1.334c.015-.09.028-.182.028-.277V6.57c0-.98-.797-1.777-1.778-1.777H3.5V3.358c0-.414-.336-.75-.75-.75s-.75.336-.75.75V20.83c0 .415.336.75.75.75s.75-.335.75-.75v-1.434h10.556c.98 0 1.778-.797 1.778-1.777v-2.313c0-.095-.014-.187-.028-.278h4.417c.98 0 1.778-.798 1.778-1.778v-2.31c0-.983-.797-1.78-1.778-1.78zM17.14 6.293c.152 0 .277.124.277.277v2.31c0 .154-.125.28-.278.28H3.5V6.29h13.64zm-2.807 9.014v2.312c0 .153-.125.277-.278.277H3.5v-2.868h10.556c.153 0 .277.126.277.28zM20.5 13.25c0 .153-.125.277-.278.277H3.5V10.66h16.722c.153 0 .278.124.278.277v2.313z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="tweet-option">
+                    <svg class="tweet-icon" viewBox="0 0 24 24">
+                        <g>
+                            <path
+                                d="M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75zm0-20C6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25s9.25-4.15 9.25-9.25S17.1 2.75 12 2.75z">
+                            </path>
+                            <path
+                                d="M12 17.115c-1.892 0-3.633-.95-4.656-2.544-.224-.348-.123-.81.226-1.035.348-.226.812-.124 1.036.226.747 1.162 2.016 1.855 3.395 1.855s2.648-.693 3.396-1.854c.224-.35.688-.45 1.036-.225.35.224.45.688.226 1.036-1.025 1.594-2.766 2.545-4.658 2.545z">
+                            </path>
+                            <circle cx="14.738" cy="9.458" r="1.478"></circle>
+                            <circle cx="9.262" cy="9.458" r="1.478"></circle>
+                        </g>
+                    </svg>
+                </div>
+                <div class="tweet-option">
+                    <svg class="tweet-icon" viewBox="0 0 24 24">
+                        <g>
+                            <path d="M-37.9 18c-.1-.1-.1-.1-.1-.2.1 0 .1.1.1.2z"></path>
+                            <path
+                                d="M-37.9 18c-.1-.1-.1-.1-.1-.2.1 0 .1.1.1.2zM18 2.2h-1.3v-.3c0-.4-.3-.8-.8-.8-.4 0-.8.3-.8.8v.3H7.7v-.3c0-.4-.3-.8-.8-.8-.4 0-.8.3-.8.8v.3H4.8c-1.4 0-2.5 1.1-2.5 2.5v13.1c0 1.4 1.1 2.5 2.5 2.5h2.9c.4 0 .8-.3.8-.8 0-.4-.3-.8-.8-.8H4.8c-.6 0-1-.5-1-1V7.9c0-.3.4-.7 1-.7H18c.6 0 1 .4 1 .7v1.8c0 .4.3.8.8.8.4 0 .8-.3.8-.8v-5c-.1-1.4-1.2-2.5-2.6-2.5zm1 3.7c-.3-.1-.7-.2-1-.2H4.8c-.4 0-.7.1-1 .2V4.7c0-.6.5-1 1-1h1.3v.5c0 .4.3.8.8.8.4 0 .8-.3.8-.8v-.5h7.5v.5c0 .4.3.8.8.8.4 0 .8-.3.8-.8v-.5H18c.6 0 1 .5 1 1v1.2z">
+                            </path>
+                            <path
+                                d="M15.5 10.4c-3.4 0-6.2 2.8-6.2 6.2 0 3.4 2.8 6.2 6.2 6.2 3.4 0 6.2-2.8 6.2-6.2 0-3.4-2.8-6.2-6.2-6.2zm0 11c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7c0 2.5-2.1 4.7-4.7 4.7z">
+                            </path>
+                            <path
+                                d="M18.9 18.7c-.1.2-.4.4-.6.4-.1 0-.3 0-.4-.1l-3.1-2v-3c0-.4.3-.8.8-.8.4 0 .8.3.8.8v2.2l2.4 1.5c.2.2.3.6.1 1z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="tweet-option">
+                    <svg class="tweet-icon tweet-icon-dark no-hover-effect" viewBox="0 0 24 24">
+                        <g>
+                            <path d="M12 14.315c-2.088 0-3.787-1.698-3.787-3.786S9.913 6.74 12 6.74s3.787 1.7 3.787 3.787-1.7 3.785-3.787 3.785zm0-6.073c-1.26 0-2.287 1.026-2.287 2.287S10.74 12.814 12 12.814s2.287-1.025 2.287-2.286S13.26 8.24 12 8.24z">
+                            </path>
+                            <path d="M20.692 10.69C20.692 5.9 16.792 2 12 2s-8.692 3.9-8.692 8.69c0 1.902.603 3.708 1.743 5.223l.003-.002.007.015c1.628 2.07 6.278 5.757 6.475 5.912.138.11.302.163.465.163.163 0 .327-.053.465-.162.197-.155 4.847-3.84 6.475-5.912l.007-.014.002.002c1.14-1.516 1.742-3.32 1.742-5.223zM12 20.29c-1.224-.99-4.52-3.715-5.756-5.285-.94-1.25-1.436-2.742-1.436-4.312C4.808 6.727 8.035 3.5 12 3.5s7.192 3.226 7.192 7.19c0 1.57-.497 3.062-1.436 4.313-1.236 1.57-4.532 4.294-5.756 5.285z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <span class="tweet-button">
+                Tweet
+         </span>
+    </div>
+</div>
+
+<div class="tweet-post">
+    <div class="profile-container">
+    <div class="tweet-profile">
+        <img src="data:image/png;base64,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"
+         alt="">
+    </div>
+    <div class="user-details-container">
+    <div class="user-details">
+        <span class="name">Tesla</span>
+        <span class="twitter-sun"><img src="./assets/sun.svg" alt=""></span>
+        <span class="twitter-user-name">@Tesla</span>
+        <span class="divider">·</span>
+        <span class="time">Aug 05</span>
+        <div class="more-option"><svg viewBox="0 0 24 24">
+            <g>
+                <path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                </path>
+            </g>
+        </svg>
+    </div>
+    </div>
+    
+    <div class="tweet-text">
+        All you have to do is enter your destination
+    </div>
+</div>  
+</div>
+    <div class="post1-img">
+        <img src="https://pbs.twimg.com/media/F2taQEzWAAA6Mde?format=webp&name=900x900" alt="">  
+    </div>
+    <div class="reaction">
+            <div class="reaction-option">
+                <div class="reaction-option-blue">
+                <span class="reply"><svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                        </path>
+                    </g>
+                </svg>
+            </span>
+                <span class="reaction-count">1232</span>
+            </div>
+            <div class="reaction-option-green">
+                <span class="retweet"><svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">  
+                        </path>
+                    </g>
+                </svg>
+                <span class="reaction-count">3543</span>
+            </div>
+            <div class="reaction-option-red">
+                <span class="like"><svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                        </path>
+                    </g>
+                </svg>
+            </span>
+                <span class="reaction-count">4322</span>
+            </div>
+            <div class="share">
+                <span class="share"><svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                        </path>
+                    </g>
+                </svg>
+            </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tweet-post">
+    <div class="profile-container">
+    <div class="tweet-profile">
+        <img src="https://pbs.twimg.com/profile_images/1635034850666364928/WvS-vMHt_400x400.jpg"
+         alt="">
+    </div>
+    <div class="user-details-container">
+    <div class="user-details">
+        <span class="name">Teslaconomics</span>
+        <span class="blue-mark">
+            <svg viewBox="0 0 22 22" >
+            <g>
+            <path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z">
+            </path>
+        </g>
+    </svg>
+</span>
+        <span class="twitter-user-name">@Teslaconomics</span>
+        <span class="divider">·</span>
+        <span class="time">Aug 17</span>
+        <div class="more-option"><svg viewBox="0 0 24 24">
+            <g>
+                <path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                </path>
+            </g>
+        </svg>
+    </div>
+    </div>
+    <div class="tweet-text">
+        The Tesla Cybertruck is coming.
+    </div>
+</div>  
+</div>
+    <div class="post2-img">
+        <img src="https://pbs.twimg.com/media/F3v2ayJbcAANnZY?format=webp&name=small"alt="">
+    </div>
+    <div class="reaction">
+            <div class="reaction-option">
+                <div class="reaction-option-blue">
+                <span class="reply"><svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                        </path>
+                    </g>
+                </svg>
+            </span>
+                <span class="reaction-count">143</span>
+            </div>
+            <div class="reaction-option-green">
+                <span class="retweet"><svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">  
+                        </path>
+                    </g>
+                </svg>
+            </span>
+                <span class="reaction-count">2342</span>
+            </div>
+            <div class="reaction-option-red">
+                <span class="like"><svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                        </path>
+                    </g>
+                </svg>
+            </span>
+                <span class="reaction-count">3454</span>
+            </div>
+            <div class="share">
+                <span class="share"><svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                        </path>
+                    </g>
+                </svg>
+            </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tweet-post">
+    <div class="profile-container">
+    <div class="tweet-profile">
+        <img src="data:image/jpeg;base64,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brbhuH5n/CIiK4uERERERERERERERERERERERERERERFqV9BHMwxSsa9jt2uGn/vxVIrOHKqk71KTUQfUvP6yMfYefSHgV0JeLmIxkRhhxGhzTofTUHiCCvACDtNNDvH1dc1pMXhlJjJyv8AWikblcPAtdv7rrHLgEQdnhMtO/2onlnxaNCr3i+BU1SLTxNf0NrOHk4ahVyXgqWP/C1j2j2JQJG+Qdo4BY36HfAcXyMcsJ0dWniK1/iaeasma2xSPDDuIz8LeRWhFV4nF6FVHMOk0dj/AFMW0OJ8SG9JA/xbMR8nBYJaDE496aGYdY5cp+D1hNTVjR2HT/y5XD4grrtMbZnDY/j3f7XN+QXOzJHJzm+PqCt08U4idqOFvnPf7gteXE8Uk3mp4R/lsLnfF+ixCqqjth9T7w0fisrKbEn+hRsj8ZZh/pZqna427KExnHu+r3DyQtkhm9zvH0aFpPwISHNVTTVB6SPOUeTG6LZqK2npmgOcxg5MaNT5MbqVvRcI1cn+IrMjebKdlj/W+5+SnMH4VpaY5o4gX/WPJe8/zO291ly7CZiZIM9HLqfC3LxIDR0aea6EyyHXsIYHE5+GZ8VVqLD6ys9FrqSA7veP1zx9lnq+ZVywLAoKRmSFlr6ucdXPPVzjqSpRerXgwYcBnZwWhrfnxJzJ55aUVd1XO23mp+styIiKRERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERF//2Q=="
+         alt="">
+    </div>
+    <div class="user-details-container">
+    <div class="user-details">
+        <span class="name">Real Madrid C.F.</span>
+        <span class="twitter-sun"><img src="./assets/sun.svg" alt=""></span>
+        <span class="twitter-user-name">@realmadrid</span>
+        <span class="divider">·</span>
+        <span class="time">14m</span>
+        <div class="more-option"><svg viewBox="0 0 24 24">
+            <g>
+                <path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                </path>
+            </g>
+        </svg>
+    </div>
+    </div>
+    
+    <div class="tweet-text">
+        Vengo. Marco. Y me voy. Gracias.
+    </div>
+</div>  
+</div>
+    <div class="post3-img">
+        <img src="https://pbs.twimg.com/media/F36wFUbW4AA_nlm?format=jpg&name=900x900" alt="">  
+    </div>
+    <div class="reaction">
+            <div class="reaction-option">
+                <div class="reaction-option-blue">
+                <span class="reply"><svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                        </path>
+                    </g>
+                </svg>
+            </span>
+                <span class="reaction-count">652</span>
+            </div>
+            <div class="reaction-option-green">
+                <span class="retweet"><svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">  
+                        </path>
+                    </g>
+                </svg>
+                <span class="reaction-count">356</span>
+            </div>
+            <div class="reaction-option-red">
+                <span class="like"><svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                        </path>
+                    </g>
+                </svg>
+            </span>
+                <span class="reaction-count">134</span>
+            </div>
+            <div class="share">
+                <span class="share"><svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                        </path>
+                    </g>
+                </svg>
+            </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tweet-post">
+    <div class="profile-container">
+    <div class="tweet-profile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxOl7_Xu6FqxHzMZUFh3Ghf3DlLkkuUXhP5ndIdHOiltoYEOeFMZ_k_Z3RyhUJ-L8N0fU&usqp=CAU"
+         alt="">
+    </div>
+    <div class="user-details-container">
+    <div class="user-details">
+        <span class="name">B/R Football</span>
+        <span class="twitter-sun"><img src="./assets/sun.svg" alt=""></span>
+        <span class="twitter-user-name">@brfootball</span>
+        <span class="divider">·</span>
+        <span class="time">Aug 17</span>
+        <div class="more-option"><svg viewBox="0 0 24 24">
+            <g>
+                <path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                </path>
+            </g>
+        </svg>
+    </div>
+    </div>
+    
+    <div class="tweet-text">
+        UEFA Men's Player of the Year nominees 🌟
+    </div>
+</div>  
+</div>
+    <div class="post4-img">
+        <img src="https://pbs.twimg.com/media/F3u_0UfWcAAfJ9S?format=jpg&name=large" alt="">  
+    </div>
+    <div class="reaction">
+            <div class="reaction-option">
+                <div class="reaction-option-blue">
+                <span class="reply"><svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                        </path>
+                    </g>
+                </svg>
+            </span>
+                <span class="reaction-count">1,325</span>
+            </div>
+            <div class="reaction-option-green">
+                <span class="retweet"><svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">  
+                        </path>
+                    </g>
+                </svg>
+                <span class="reaction-count">4,539</span>
+            </div>
+            <div class="reaction-option-red">
+                <span class="like"><svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                        </path>
+                    </g>
+                </svg>
+            </span>
+                <span class="reaction-count">3,445</span>
+            </div>
+            <div class="share">
+                <span class="share"><svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                        </path>
+                    </g>
+                </svg>
+            </span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="right-sidebar">
+    <div class="searchbar">
+        <input type="text"placeholder="Search Twitter">
+        <div class="search-icon"><svg viewBox="0 0 24 24">
+            <g>
+                <path d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z">                    
+                </path>
+            </g>
+        </svg>
+    </div>
+    </div>
+    <div class="trends-container">
+        <div class="trends-header-card">
+            <div class="trends-header">
+                <h1>Trends for you</h1>
+            </div>
+        </div>
+        <div class="trends-card">
+            <div class="trends-items">
+                <div class="trend-info">
+                    <div class="text-container"></div>
+                    <span class="trending">Trending in South Africa</span>
+                    <span class="title">Sandton</span>
+                    <span class="tweets">9,653 Tweets</span>
+                </div>
+                <div class="more">
+                    <span class="more-icon"><svg viewBox="0 0 24 24">
+                        <g>
+                            <path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">                                
+                            </path>
+                        </g>
+                    </svg>
+                </span>
+                    </div>
+            </div>
+        </div>
+        <div class="trends-card">
+            <div class="trends-items">
+                <div class="trend-info">
+                    <div class="text-container"></div>
+                    <span class="trending">Trending in South Africa</span>
+                    <span class="title">iStore</span>
+                    <span class="tweets">8,341 Tweets</span>
+                </div>
+                <div class="more">
+                    <span class="more-icon"><svg viewBox="0 0 24 24">
+                        <g>
+                            <path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">                                
+                            </path>
+                        </g>
+                    </svg>
+                </span>
+               </div>
+            </div>
+        </div>
+        <div class="trends-card">
+            <div class="trends-items">
+                <div class="trend-info">
+                    <div class="text-container"></div>
+                    <span class="trending">Trending in South Africa</span>
+                    <span class="title">Ryan Reynolds</span>
+                    <span class="tweets">7,362 Tweets</span>
+                </div>
+                <div class="more">
+                    <span class="more-icon"><svg viewBox="0 0 24 24">
+                        <g>
+                            <path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">                                
+                            </path>
+                        </g>
+                    </svg>
+                </span>
+                    </div>
+            </div>
+        </div>
+        <div class="trends-card">
+            <div class="trends-items">
+                <div class="trend-info">
+                    <div class="text-container"></div>
+                    <span class="trending">Trending in South Africa</span>
+                    <span class="title">Tirelo</span>
+                    <span class="tweets">1,351 Tweets</span>
+                </div>
+                <div class="more">
+                    <span class="more-icon"><svg viewBox="0 0 24 24">
+                        <g>
+                            <path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">                                
+                            </path>
+                        </g>
+                    </svg>
+                   </span>
+                    </div>
+            </div>
+        </div>
+        <div class="show-more">
+            <span>Show more</span>
+        </div>
+        </div>
+       
+       <div class="follow-container">
+           <div class="follow-header-card">
+               <div class="follow-header">
+                   <h1>Who to follow</h1>
+                </div>
+            </div>
+        <div class="follow">
+        <div class="user-profile-container">
+            <div class="user-profile">
+                <img src="data:image/png;base64,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" 
+                alt="">
+            </div>
+        <div class="user-data-container">
+            <div class="user-data">
+                <span class="name">Tesla</span>
+                <span class="sun"><img src="./assets/sun.svg" alt=""></span>
+            </div>
+                <span class="user-id">@Tesla</span>
+        </div>
+        <span class="follow-button">
+            Follow
+     </span>
+    </div>
+         
+        </div>
+        <div class="user-profile-container">
+            <div class="user-profile">
+                <img src="data:image/jpeg;base64,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brbhuH5n/CIiK4uERERERERERERERERERERERERERERFqV9BHMwxSsa9jt2uGn/vxVIrOHKqk71KTUQfUvP6yMfYefSHgV0JeLmIxkRhhxGhzTofTUHiCCvACDtNNDvH1dc1pMXhlJjJyv8AWikblcPAtdv7rrHLgEQdnhMtO/2onlnxaNCr3i+BU1SLTxNf0NrOHk4ahVyXgqWP/C1j2j2JQJG+Qdo4BY36HfAcXyMcsJ0dWniK1/iaeasma2xSPDDuIz8LeRWhFV4nF6FVHMOk0dj/AFMW0OJ8SG9JA/xbMR8nBYJaDE496aGYdY5cp+D1hNTVjR2HT/y5XD4grrtMbZnDY/j3f7XN+QXOzJHJzm+PqCt08U4idqOFvnPf7gteXE8Uk3mp4R/lsLnfF+ixCqqjth9T7w0fisrKbEn+hRsj8ZZh/pZqna427KExnHu+r3DyQtkhm9zvH0aFpPwISHNVTTVB6SPOUeTG6LZqK2npmgOcxg5MaNT5MbqVvRcI1cn+IrMjebKdlj/W+5+SnMH4VpaY5o4gX/WPJe8/zO291ly7CZiZIM9HLqfC3LxIDR0aea6EyyHXsIYHE5+GZ8VVqLD6ys9FrqSA7veP1zx9lnq+ZVywLAoKRmSFlr6ucdXPPVzjqSpRerXgwYcBnZwWhrfnxJzJ55aUVd1XO23mp+styIiKRERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERF//2Q=="
+                alt="">
+            </div>
+        <div class="user-data-container">
+            <div class="user-data">
+                <span class="name">Real Madrid C.F.</span>
+                <span class="sun"><img src="./assets/sun.svg" alt=""></span>
+            </div>
+                <span class="user-id">@realmadrid</span>
+        </div>
+        <span class="follow-button">
+            Follow
+     </span>
+        </div>
+        <div class="user-profile-container">
+            <div class="user-profile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxOl7_Xu6FqxHzMZUFh3Ghf3DlLkkuUXhP5ndIdHOiltoYEOeFMZ_k_Z3RyhUJ-L8N0fU&usqp=CAU"
+                alt="">
+            </div>
+        <div class="user-data-container">
+            <div class="user-data">
+                <span class="name">B/R Football</span>
+                <span class="sun"><img src="./assets/sun.svg" alt=""></span>
+            </div>
+                <span class="user-id">@brfootball</span>
+        </div>
+        <span class="follow-button">
+            Follow
+     </span>
+        </div>
+        <div class="show-more">
+            <span>Show more</span>
+        </div>
+        </div>
+        <div class="footer">
+            <div class="footer-section">
+                <span>Terms of Service</span>  
+                <span>Privacy Policy</span>  
+                <span>Cookie Policy</span>     
+            </div>
+                <div class="footer-section">
+                    <div class="option"> 
+                    <span>Accessibility</span>  
+                    <span> Ads info</span> 
+                    <span>More</span>  
+                    <span class="option"><svg viewBox="0 0 24 24">
+                        <g>
+                            <path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">                                
+                            </path>
+                        </g>
+                    </svg>
+                </span>
+                </div>
+                <div class="copyright">
+                    <span>© 2023 X Corp clone.</span>
+                    </div>     
+                </div>
+        </div>
+        </div>
+       </div>
+     </div>
+</div>
+</div>
+<footer class="mobile-footer">
+    <svg class="sidebar-icon" viewBox="0 0 24 24">
+        <g>
+            <path
+                d="M22.58 7.35L12.475 1.897c-.297-.16-.654-.16-.95 0L1.425 7.35c-.486.264-.667.87-.405 1.356.18.335.525.525.88.525.16 0 .324-.038.475-.12l.734-.396 1.59 11.25c.216 1.214 1.31 2.062 2.66 2.062h9.282c1.35 0 2.444-.848 2.662-2.088l1.588-11.225.737.398c.485.263 1.092.082 1.354-.404.263-.486.08-1.093-.404-1.355zM12 15.435c-1.795 0-3.25-1.455-3.25-3.25s1.455-3.25 3.25-3.25 3.25 1.455 3.25 3.25-1.455 3.25-3.25 3.25z">
+            </path>
+        </g>
+    </svg>
+    <span class="sidebar-title">Home</span>
+</span>
+<span class="sidebar-item">
+    <svg class="sidebar-icon" viewBox="0 0 24 24">
+        <g>
+            <path d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z">
+            </path>
+        </g>
+    </svg>
+    <span class="sidebar-title">Explore</span>
+</span>
+<span class="sidebar-item">
+<svg class="sidebar-icon" viewBox="0 0 24 24">
+    <g>
+        <path
+            d="M21.697 16.468c-.02-.016-2.14-1.64-2.103-6.03.02-2.532-.812-4.782-2.347-6.335C15.872 2.71 14.01 1.94 12.005 1.93h-.013c-2.004.01-3.866.78-5.242 2.174-1.534 1.553-2.368 3.802-2.346 6.334.037 4.33-2.02 5.967-2.102 6.03-.26.193-.366.53-.265.838.102.308.39.515.712.515h4.92c.102 2.31 1.997 4.16 4.33 4.16s4.226-1.85 4.327-4.16h4.922c.322 0 .61-.206.71-.514.103-.307-.003-.645-.263-.838zM12 20.478c-1.505 0-2.73-1.177-2.828-2.658h5.656c-.1 1.48-1.323 2.66-2.828 2.66zM4.38 16.32c.74-1.132 1.548-3.028 1.524-5.896-.018-2.16.644-3.982 1.913-5.267C8.91 4.05 10.397 3.437 12 3.43c1.603.008 3.087.62 4.18 1.728 1.27 1.285 1.933 3.106 1.915 5.267-.024 2.868.785 4.765 1.525 5.896H4.38z">
+        </path>
+    </g>
+</svg>
+<span class="sidebar-title">Notifications</span>
+</span>
+<span class="sidebar-item">
+<svg class="sidebar-icon" viewBox="0 0 24 24">
+    <g>
+        <path
+            d="M19.25 3.018H4.75C3.233 3.018 2 4.252 2 5.77v12.495c0 1.518 1.233 2.753 2.75 2.753h14.5c1.517 0 2.75-1.235 2.75-2.753V5.77c0-1.518-1.233-2.752-2.75-2.752zm-14.5 1.5h14.5c.69 0 1.25.56 1.25 1.25v.714l-8.05 5.367c-.273.18-.626.182-.9-.002L3.5 6.482v-.714c0-.69.56-1.25 1.25-1.25zm14.5 14.998H4.75c-.69 0-1.25-.56-1.25-1.25V8.24l7.24 4.83c.383.256.822.384 1.26.384.44 0 .877-.128 1.26-.383l7.24-4.83v10.022c0 .69-.56 1.25-1.25 1.25z">
+        </path>
+    </g>
+</svg>
+<span class="sidebar-title">Messages</span>
+</footer>
 </body>
 </html>
