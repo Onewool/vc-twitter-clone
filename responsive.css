@@ -1,0 +1,68 @@
+@media screen and (max-width: 768px) {
+    .sidebar,
+    .logo,
+    .sidebar-title,  
+    .sidebar-button,
+    .sidebar-user,
+    .tweet-creation,
+    .right-sidebar {
+        display: none;
+    }
+
+    .title-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; 
+    }
+
+    .tweet-post {
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        max-width: 100%;
+        margin-top: 50px; 
+        border-bottom: 1px solid #38444d;
+        padding-bottom: 40px;
+    }
+   
+    .tweet-post img {
+        display: flex;
+        max-width: 100%;  
+        height: auto;    
+        margin: 0 auto;   
+    }
+
+    .main-container,
+    .content-wrapper,
+    .middle-bar {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    
+    .mobile-footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;  
+        background-color: black;  
+        border-top: 1px solid #38444d;
+        z-index: 1001;  
+
+    }
+
+    .mobile-footer a {
+        fill: rgb(231, 233, 234);  
+        font-size: 24px;  
+        text-decoration: none;
+    }
+}
+
